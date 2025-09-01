@@ -44,3 +44,37 @@ def main():
 
 if __name__ == "__main__":
     main()
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+    Count the number of 3x3 submatrices in 'board' 
+    that have 'E' in all four corners.
+    E * E
+    * * *
+    E * E
+"""
+def count_submatrices_with_E(board):
+    found_submatrices = 0
+
+    # Loop through each possible top-left corner of a 3x3 submatrix
+    for i in range(len(board) - 2):
+        for j in range(len(board[0]) - 2):
+            # Check the four corners of the current 3x3 submatrix
+            if (board[i][j] == 'E' and
+                board[i + 2][j] == 'E' and
+                board[i][j + 2] == 'E' and
+                board[i + 2][j + 2] == 'E'):
+                found_submatrices += 1
+
+    return found_submatrices
+
+
+
+# Example board: 'E' = Empty, 'P' = Piece
+board = [
+        ['E', 'P', 'E'],
+        ['E', 'P', 'E'],
+        ['E', 'P', 'E'],
+        ['E', 'P', 'E']
+    ]
+
+result = count_submatrices_with_E(board)
+print(f"Submatrices with 'E' in all corners: {result}")
