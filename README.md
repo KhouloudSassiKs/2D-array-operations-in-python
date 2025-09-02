@@ -29,13 +29,14 @@ Searches a matrix for a **specific pattern** of values or characters, returning 
    ```bash
    git clone https://github.com/<your-username>/2D-array-operations-in-python.git
    cd 2D-array-operations-in-python
-Run any of the scripts using Python:
 
-bash
-Copy code
+2. Run any of the scripts using Python:
+```bash
 python column-zigzag.py
 python vertical-traversal.py
 python direction-traverse.py
 python pattern-search.py
-Each script contains example matrices and outputs for demonstration.
+```
+
+3. Each script contains example matrices and outputs for demonstration.
 Modify the matrix variable in the script to test with your own data.
