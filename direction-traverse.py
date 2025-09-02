@@ -1,8 +1,8 @@
-"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
-    Given a grid of altitudes and a starting point, 
-    return the highest altitude found among the starting cell 
-    and its immediate North, East, South, and West neighbors.
-  """
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+Given a grid of altitudes and a starting point, 
+return the highest altitude found among the starting cell 
+and its immediate North, East, South, and West neighbors.
+"""
 def find_peak(grid, start_row, start_col):
     rows, cols = len(grid), len(grid[0])
     altitude = grid[start_row][start_col]
@@ -14,7 +14,6 @@ def find_peak(grid, start_row, start_col):
             altitude = grid[r][c]  # Note: Only checks direct neighbors
 
     return altitude
-
 
 # Example mountain terrain grid
 mountain = [
