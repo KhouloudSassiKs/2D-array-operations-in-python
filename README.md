@@ -1,20 +1,41 @@
 # 2D-array-operations-in-python 📚
 This repository contains Python implementations of **matrix traversal algorithms** for 2D arrays.  
-It includes different ways to iterate over matrices, inspired by bookshelf-style layouts.  
+It includes different ways to iterate over matrices.  
 
 **Note:** This is my independent work, developed based on practice exercises from CodeSignal.
 ## Algorithms Included
 
-1. **Zig-Zag Column-wise Traversal**  
-   - **File:** `column-zigzag.py`  
-   - Traverses a matrix column by column in a zig-zag pattern, starting from the bottom-right corner.
+### Zig-Zag Column-wise Traversal  
+**File:** `column-zigzag.py`  
+Performs a zig-zag traversal of a matrix, moving **column by column** starting from the **bottom-right corner**. The direction alternates for each column: one upward, the next downward, and so on.  
 
-2. **Vertical Column Traversal**  
-   - **File:** `vertical-traversal.py`  
-   - Traverses a matrix column by column from bottom to top, moving from the rightmost column to the leftmost.
+### Vertical Column Traversal  
+**File:** `vertical-traversal.py`  
+Traverses a matrix **column by column** from **bottom to top**, starting at the **rightmost column** and moving left until all columns are covered.  
 
-## How to Run
+### Direction-based Traversal  
+**File:** `direction-traverse.py`  
+Traverses a matrix in a **predefined sequence of directions** (e.g., east, south, west, north), following the specified movement rules until all valid steps are completed.  
 
-1. Clone the repository:
-```bash
-git clone https://github.com/yourusername/matrix-traversals.git
+### Pattern Search  
+**File:** `pattern-search.py`  
+Searches a matrix for a **specific pattern** of values or characters, returning the locations of all matches.  
+
+---
+
+## How to Run  
+
+1. Clone the repository:  
+   ```bash
+   git clone https://github.com/<your-username>/2D-array-operations-in-python.git
+   cd 2D-array-operations-in-python
+Run any of the scripts using Python:
+
+bash
+Copy code
+python column-zigzag.py
+python vertical-traversal.py
+python direction-traverse.py
+python pattern-search.py
+Each script contains example matrices and outputs for demonstration.
+Modify the matrix variable in the script to test with your own data.
