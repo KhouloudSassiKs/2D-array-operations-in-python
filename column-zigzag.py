@@ -7,6 +7,12 @@
 
     Returns:
         List[int]: List of elements tracing the zig zag steps
+    Example:
+    [1, 2, 3, 4],
+    [5, 6, 7, 8],
+    [9, 10, 11, 12]
+    should output:
+    12, 8, 4, 3, 7, 11, 10, 6, 2, 1, 5, 9
     """
 def column_traverse(matrix):
     rows, cols = len(matrix), len(matrix[0])
